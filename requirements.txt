@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-core
+langchain-groq
+langchain-experimental
+requests
+pypdf
+PyPDF2
+beautifulsoup4
+lxml
+faiss-cpu
+openai
+requests
+fuzzywuzzy
+python-Levenshtein
