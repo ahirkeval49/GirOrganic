@@ -88,7 +88,7 @@ def main():
 
     st.title(" GirOrganic Chat Assistant")
     st.write("Welcome! I am GirOrganic AI, how can I assist you today?")
-    st.image("/mnt/data/transparent.png", width=200)  # Adjust path and size as necessary
+    st.image("transparent.png", width=200)  # Adjust path and size as necessary
     # Critical URLs to scrape
     urls = [
         "https://girorganic.com/"
