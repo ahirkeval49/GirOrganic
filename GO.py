@@ -86,7 +86,8 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-    st.image("transparent.png", width=200)  # Adjust path and size as necessary st.title(" GirOrganic Chat Assistant")
+    st.image("transparent.png", width=200)  # Adjust path and size as necessary 
+    st.title(" GirOrganic Chat Assistant")
     st.write("Welcome! I am GirOrganic AI, how can I assist you today?")
     
     # Critical URLs to scrape
