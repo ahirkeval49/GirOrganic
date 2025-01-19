@@ -91,10 +91,7 @@ def main():
 
     # Critical URLs to scrape
     urls = [
-        "https://www.girorganic.com/about-us",
-        "https://www.girorganic.com/shop",
-        "https://www.girorganic.com/blog",
-        "https://www.girorganic.com/contact"
+        "https://girorganic.com/"
         # Add more URLs as needed
     ]
 
@@ -116,7 +113,7 @@ def main():
             context_to_send = "\n\n".join(relevant_chunks)
             context_to_send = truncate_context_to_token_limit(context_to_send, 6000)
 
-            prompt = f"You are GirOrganic AI. Use the following context to answer the user's query:\n\n{context_to_send}\n\nQuery: {user_query}"
+            prompt = f"You are GirOrganic AI, Strictly use the infomrmation found on the website. Use the following context to answer the user's query:\n\n{context_to_send}\n\nQuery: {user_query}"
             groq_model = initialize_groq_model()
             response = groq_model.invoke(prompt, timeout=30)
             st.markdown(f"**Response:** {response.content.strip()}")
